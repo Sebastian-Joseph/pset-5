@@ -26,7 +26,13 @@ window.onload = function() {
  */
 
 const sayHello = function() {
-    // write your exercise 1 code here
+  let ctx = document.getElementById('student-canvas-1').getContext('2d');
+do {ctx = prompt("Enter a message")
+number = ctx.length
+} while (number < 50)
+if (number > 50) {
+  alert("")
+}
 };
 
 /*
