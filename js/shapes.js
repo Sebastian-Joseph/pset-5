@@ -26,13 +26,16 @@ window.onload = function() {
  */
 
 const sayHello = function() {
-  let ctx = document.getElementById('student-canvas-1').getContext('2d');
-do {ctx = prompt("Enter a message")
-number = ctx.length
-} while (number < 50)
-if (number > 50) {
-  alert("")
-}
+  let canvas = document.getElementById('student-canvas-1');
+  let ctx = canvas.getContext('2');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  do {
+    let message = prompt("Message: ")
+    if(message.length > 50) {
+      alert("Your message is too long. Keep it under 50 characters.")
+    }
+  } while (message.length > 50)
+  ctx.font()
 };
 
 /*
