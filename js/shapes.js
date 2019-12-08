@@ -28,12 +28,14 @@ window.onload = function() {
 const sayHello = function() {
   let canvas = document.getElementById('student-canvas-1');
   let ctx = canvas.getContext('2');
-
+  
   let message = prompt("Message: ")
   while (message.length >= 50) {
     alert("Your message is too long. Please keep your message under 50 characters.")
-  }
-  ctx.font = '48px sans-serif'
+  } ctx.font = '48px sans-serif';
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeText(message, 30, 70, 994);
+
 };
 
 /*
@@ -42,6 +44,7 @@ const sayHello = function() {
 
 const drawRectangle = function() {
     // write your exercise 2 code here
+    
 };
 
 /*
