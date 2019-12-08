@@ -68,8 +68,8 @@ const drawRectangle = function() {
     }
    } while (width > 1024 || width < 1 || height > 512 || height < 1 || x < 1 || x > 1024 || y < 1 || y > 512 || isNaN(width) || isNaN(height) || isNaN(x) || isNaN(y))
 
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.strokeRect(x, y, width, height);
+  ctx.stroke();
 };
 
 /*
@@ -97,7 +97,20 @@ if (realColor != "green" && realColor != "black" && realColor != "purple" && rea
  */
 
 const drawTriangle = function() {
-    // write your exercise 4 code here
+const canvas = document.getElementById('student-canvas-3');
+const ctx = canvas.getContext('2d');
+ctx.clearRect(0, 0, canvas,width, canvas.height);
+
+do {
+  let a = Number(prompt("Side 1: "))
+  let b = Number(prompt("Side 2: "))
+  let c = Number(prompt("Side 3: "))
+  if (a*a + b*b != c*c) {
+    alert("That's not a valid right triangle.")
+  } if (a > 1024 || b > 1024 || c > 1024) {
+    alert("Your triangle won't fit on the canvas.")
+  }
+}
 };
 
 /*
