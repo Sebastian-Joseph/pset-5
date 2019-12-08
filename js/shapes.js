@@ -67,7 +67,6 @@ const drawRectangle = function() {
 
     ctx.rect(x, y, width, height);
     ctx.stroke();
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
 };
 
 /*
