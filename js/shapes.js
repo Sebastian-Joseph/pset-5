@@ -28,14 +28,13 @@ window.onload = function() {
 const sayHello = function() {
   let canvas = document.getElementById('student-canvas-1');
   let ctx = canvas.getContext('2');
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
   do {
     let message = prompt("Message: ")
     if(message.length > 50) {
       alert("Your message is too long. Keep it under 50 characters.")
     }
-  } while (message.length > 50)
-  ctx.font()
+  } while (message.length < 50)
+  ctx.clientHeight("48px")
 };
 
 /*
