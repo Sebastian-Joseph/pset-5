@@ -86,6 +86,7 @@ if (realColor != "green" && realColor != "black" && realColor != "purple" && rea
     } while (realColor != "green" && realColor != "black" && realColor != "purple" && realColor != "orange" && realColor != "blue" && realColor != "yellow" && realColor != "red")
 
     ctx.fillStyle = realColor
+    ctx.fillRect(10, 10, 100, 50);
 };
 
 /*
