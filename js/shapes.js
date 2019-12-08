@@ -28,14 +28,15 @@ window.onload = function() {
 const sayHello = function() {
   let canvas = document.getElementById('student-canvas-1');
   let ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
   
   let message = prompt("Message: ");
   while (message.length >= 50) {
     alert("Your message is too long. Please keep your message under 50 characters.");
     message = prompt("Message: ")
-  } ctx.font = '48px sans-serif';
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+   ctx.font = '48px sans-serif';
   ctx.strokeText(message, 30, 70, 994);
 
 };
