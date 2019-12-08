@@ -84,6 +84,7 @@ if (realColor != "green" && realColor != "black" && realColor != "purple" && rea
   alert(color + " is not a supported color.")
 }
     } while (realColor != "green" && realColor != "black" && realColor != "purple" && realColor != "orange" && realColor != "blue" && realColor != "yellow" && realColor != "red")
+    
 };
 
 /*
