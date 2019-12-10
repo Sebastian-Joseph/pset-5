@@ -109,8 +109,14 @@ do {
     alert("That's not a valid right triangle.")
   } if (a > 1024 || b > 1024 || c > 1024) {
     alert("Your triangle won't fit on the canvas.")
-  }
+  } while (a*a + b*b != c*c || isNaN(a) || isNaN(b) || isNaN(c) || a > 1024 || b > 1024 || c > 1024)
 }
+ctx.beginPath();
+ctx.moveTo(25,25);
+ctx.lineTo(25,a);
+ctx.lineTo(b,a);
+ctx.lineTo(25,25);
+ctx.fill();
 };
 
 /*
@@ -118,7 +124,7 @@ do {
  */
 
 const drawFace = function() {
-    // write your exercise 4 code here
+
 };
 
 /*
