@@ -175,7 +175,7 @@ const drawTriangle = function() {
       const canvas = document.getElementById('student-canvas-5');
       const ctx = canvas.getContext('2d');
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       do {
         var radius = Number(prompt("Radius: "))
         if (radius < 32) {
@@ -192,7 +192,7 @@ const drawTriangle = function() {
         }
       } while (radius < 32 || radius > 256 || isNaN(radius))
 
-      var mouth = radius * 0.70
+      var mouth = radius * 0.7
       var eyes = radius * 0.15
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
